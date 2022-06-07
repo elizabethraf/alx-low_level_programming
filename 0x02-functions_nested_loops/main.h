@@ -4,5 +4,6 @@
 
 int _putchar(int chr);
 void print_puts(void);
+void print_alphabet(void);
 
 #endif
