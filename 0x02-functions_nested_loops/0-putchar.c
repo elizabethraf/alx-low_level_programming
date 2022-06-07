@@ -12,3 +12,16 @@ int main(void)
 	print_puts();
 	return (0);
 }
+
+void print_puts(void)
+{
+        int ch, i;
+        char myput[] = "_putchar";
+        for ( i = 0; i < 8; i++)
+        {
+                ch = (int) myput[i];
+                _putchar(ch);
+        }
+        _putchar('\n');
+}
+
