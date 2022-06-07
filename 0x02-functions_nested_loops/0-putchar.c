@@ -9,14 +9,6 @@
 
 int main(void)
 {
-	int ch;
-	char myput[] = "_putchar";
-	int myLen = strlen(myput);
-	for ( int i = 0; i < len; i++)
-	{
-		ch = (int)myput[i]
-		_putchar(myput[i]
-	}
-	_putchar('\n');
+	print_puts();
 	return (0);
 }
