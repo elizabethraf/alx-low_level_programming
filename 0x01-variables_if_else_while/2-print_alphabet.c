@@ -7,7 +7,7 @@ int ch;
 
 for (ch = 'a'; ch <= 'z'; ch++)
 putchar (ch);
-putchar("\n");
+ch = putchar();
 return (0);
 
 }
