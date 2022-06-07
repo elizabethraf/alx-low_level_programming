@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *  check is the rand n is negative or positive,
- *  or zero and print accordingly
- *  Return: Always (0) (Success)
- **/
+* main - Entry point
+*
+*	Return: Always (0) (Success)
+**/
 
 int main(void)
 {
@@ -13,15 +12,22 @@ int main(void)
 	return (0);
 }
 
+
+/**
+* print_puts - print text
+* Makes sure we print using putchar
+**/
+
 void print_puts(void)
 {
-        int ch, i;
-        char myput[] = "_putchar";
-        for ( i = 0; i < 8; i++)
-        {
-                ch = (int) myput[i];
-                _putchar(ch);
-        }
-        _putchar('\n');
+	int ch, i;
+	char myput[] = "_putchar";
+
+	for (i = 0; i < 8; i++)
+	{
+		ch = (int) myput[i];
+		_putchar(ch);
+	}
+	_putchar('\n');
 }
 
