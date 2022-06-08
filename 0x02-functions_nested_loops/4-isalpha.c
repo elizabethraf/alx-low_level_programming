@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-*int _isalpha(int c); - checks for lower
+* _isalpha - checks for lower
 * @c: we receiving a character
 * Return: then return 1 or 0
 **/
