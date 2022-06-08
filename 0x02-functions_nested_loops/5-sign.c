@@ -2,7 +2,7 @@
 
 /**
 * print_sign - print text
-* @c:We receiving a character
+* @n:We receiving a character
 * Return:then return 1, 0, -1 or -0
 * Makes sure we print using putchar
 **/
