@@ -1,8 +1,5 @@
 #include "main.h"
 
-
-
-
 void print_diagonal(int n)
 {
 	int ln;
@@ -10,8 +7,11 @@ void print_diagonal(int n)
 	{
 		for (ln = 0; ln < n; ln++)
 		{
+			_putchar(' ');
+			if (ln == (n - 1))
+			{
 			_putchar('\\');
-			_putchar('\n');
+			}
 		}
 		_putchar('\n');
 	}
