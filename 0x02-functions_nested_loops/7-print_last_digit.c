@@ -2,7 +2,7 @@
 
 /**
 * print_last_digit - print text
-* @c: return
+* @z: return
 * Return: the value of the last digit
 * Makes sure we print using putchar
 **/
