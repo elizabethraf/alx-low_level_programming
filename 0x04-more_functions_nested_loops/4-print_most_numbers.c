@@ -8,11 +8,11 @@ void print_most_numbers(void)
 	{
 		if (k == 2)
 		{
-			/* _putchar('0' +  k);*/
+			/* skipp */
 		}
 		else if (k == 4)
 		{
-			/* _putchar('0' +  k);*/
+			/* skipp */
 		}
 		else
 		{
