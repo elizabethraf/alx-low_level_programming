@@ -3,6 +3,7 @@
 /**
 * print_numbers - Entry point
 * Print with _putchar
+* 
 * return funtion that print 0 - 9
 * Return: 0 aslways if (successful)
 **/
@@ -14,7 +15,7 @@ void print_numbers(void)
 
 	{
 
-	_putchar (' 0 ' + x);
+	_putchar ('0' + x);
 
 	}
 	_putchar ('\n');
