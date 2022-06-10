@@ -1,4 +1,4 @@
-#include "main.h"
+include "main.h"
 /**
 * print_diagonal - Entry point
 * Print with _putchar
@@ -7,21 +7,20 @@
 **/
 void print_diagonal(int n)
 {
-	int ln;
+	int len;
 
 	if (n > 0)
 
 	{
-		for (ln = 0; ln < n; ln++)
+		for (len = 0; len < n; len++)
 
 		{
 			_putchar(' ');
 
-			if (ln == (n - 1))
+			if (len == (n - 1))
+				continue;
 
-			{
 			_putchar('\\');
-			}
 		}
 		_putchar('\n');
 	}
