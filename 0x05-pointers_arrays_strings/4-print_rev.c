@@ -9,9 +9,10 @@ void print_rev(char *s)
 	int strl = strlen(s);
 	int k;
 
-	for (k = strl; k >=0; k--)
+	for (k = strl; k >= 0; k--)
 	{
 		_putchar(*(s + k));
 	}
+	_putchar('\n');
 }
 
