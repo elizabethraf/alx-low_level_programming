@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev - Entry point
- * @str:address of string to print
+ * @s:address of string to print
  * Return: Always 0
  **/
 void print_rev(char *s)
