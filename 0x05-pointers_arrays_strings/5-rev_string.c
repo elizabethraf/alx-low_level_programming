@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _puts - Entry point
- * @str:address of string to print
+ * rev_string - Entry point
+ * @s:print reverse
  * Return: Always 0
+ * return function to reverse a string
  **/
 
 void rev_string(char *s)
@@ -13,10 +14,10 @@ void rev_string(char *s)
 
 	for (k = 0; k < strl; k++)
 	{
-		p = *(s+k);
-		*(s+k) = *(s+strl);
-		*(s+strl) = p;
-		strl--;
+	p = *(s + k);
+	*(s + k) = *(s + strl);
+	*(s + strl) = p;
+	strl--;
 	}
 }
 
