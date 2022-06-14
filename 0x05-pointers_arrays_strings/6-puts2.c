@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * puts2 - Entry point
+ * puts2 - printing every character of a string starting with the first
  * @str:function that prints every character of string
  * Return: Always 0
  **/
