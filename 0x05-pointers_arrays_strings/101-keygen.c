@@ -10,7 +10,7 @@ char GenRand()
 }
 int main()
 {
-	int n,c=0, s=0;
+	int n, c = 0, s = 0;
 }
 srand(time(0));
 cout<<"Enter the length of the password you want:";
@@ -20,10 +20,10 @@ cout<<"Your Password is:";
 N:
 char C;
 string D;
-for (int z=0; z < n; z++)
+for (int z = 0; z < n; z++)
 {
 	C = GenRand();
-	D+=C;
+	D+ = C;
 	if (isdigit(C))
 	{
 		c++;
