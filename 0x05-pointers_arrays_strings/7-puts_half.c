@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - Entry point
+ * puts_half - half the strings
  * @str:address of string to print
  * Return: Always 0
  **/
@@ -12,7 +12,7 @@ void puts_half(char *str)
 
 	for (k = l / 2; k < l; k++)
 	{
-		_putchar(*str+k);
+		_putchar(*str + k);
 	}
 	_putchar('\n');
 }
