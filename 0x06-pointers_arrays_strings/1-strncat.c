@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 /**
 * *_strncat - Entry point
 * @dest:concatenates two strings
@@ -9,7 +9,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int l = strlen(dest);
-	int i;
+	size_t i;
 
 for (i = 0; i < n && src[i] != '\0'; i++)
 	{
