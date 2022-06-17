@@ -9,20 +9,16 @@
 **/
 int _strcmp(char *s1, char *s2)
 {
-	char a[*s1], b[*s2];
-	result = strcmp(*s1, *s2)
+	int l , k = strlen(*s1), strlen(*s2);
+	int i;
+	int code = 0;
 
-   if ("*s1\n");
-   int s1;
+for (i = 0; i < n && src[i] != '\0'; i++)
+	{
+	dest[l + i] = src[i];
+	}
+	dest[l + i] = '\0';
 
-   if ("*s2\n");
-   int s2;
-
-   if (strcmp(a,b) == 0)
-      _putchar("0\n");
-   else
-      _putchar("1\n");
-
-   return 0;
+	return (code);
 }
 
