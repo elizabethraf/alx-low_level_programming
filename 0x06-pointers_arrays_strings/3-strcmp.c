@@ -9,16 +9,25 @@
 **/
 int _strcmp(char *s1, char *s2)
 {
-	int l , k = strlen(*s1), strlen(*s2);
+	int l  = strlen(s1);
+	int r = strlen(s2);
 	int i;
-	int code = 0;
+	int cnt = 0;
 
-for (i = 0; i < n && src[i] != '\0'; i++)
+	if (l == r)
 	{
-	dest[l + i] = src[i];
+		for (i = 0; s2[i] != '\0'; i++)
+		{
+			if(s1[i] == s2[i])
+				cnt++;
+		}
 	}
-	dest[l + i] = '\0';
+	else if(l > r)
+		return (15);
 
-	return (code);
+	if(cnt == i)
+		return (0);
+	
+	return (-15);
 }
 
