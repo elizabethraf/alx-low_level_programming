@@ -2,6 +2,7 @@
 
 /**
 * *_strncpy - Entry point
+* @n:copies a string.
 * @dest:copy two strings
 * @src:copy two strings
 * Print with _putchar
