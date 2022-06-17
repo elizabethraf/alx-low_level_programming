@@ -1,10 +1,11 @@
 #include "main.h"
 /**
 * *_strncat - Entry point
+* @n:src does not need to be null-terminated if it contains n
 * @dest:concatenates two strings
 * @src:concatenates two strings
 * Print with _putchar
-* Return: a pointer resulting string dest
+* Return: src does not need to be null-terminated if it contains n
 **/
 char *_strncat(char *dest, char *src, int n)
 {
