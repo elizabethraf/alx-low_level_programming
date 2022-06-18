@@ -9,21 +9,17 @@
 **/
 int _strcmp(char *s1, char *s2)
 {
-	int l  = strlen(s1);
-	int r = strlen(s2);
 	int i;
-	int cnt = 0;
 
-	if (l == r)
-	{
 	for (i = 0; s1[i] != '\0'; i++)
 	{
-	if (s1[i] != s2[i])
-		cnt++;
-		break;
+		if (s1[i] != s2[i])
+		{
+			break;
+		}
+
+		s1++;
+		s2++;
 	}
-	return (s1[i] - s2[cnt]);
-	}
-	else
 	return (*s1 - *s2);
 }
