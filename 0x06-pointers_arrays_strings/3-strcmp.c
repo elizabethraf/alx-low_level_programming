@@ -10,20 +10,19 @@
 int _strcmp(char *s1, char *s2)
 {
 	int l  = strlen(s1);
-	int r = strlen(s2);
-	int i;
-	int cnt = 0;
+    int r = strlen(s2);
+    int i;
+    int cnt = 0;
 
-	if (l == r)
-	{
-		for (i = 0; s2[i] != '\0'; i++)
-		{
-			if (s1[i] == s2[i])
-				cnt++;
-		}
-		return (s1[i] - s2[cnt]);
-	}
-	else
-		return (*s1 - *s2);
+    if (l == r)
+    {
+        for (i = 0; s2[i] != '\0'; i++)
+        {
+            if (s1[i] == s2[i])
+                cnt++;
+        }
+        return (s1[i] - s2[cnt]);
+    }
+    else
+        return (*s1 - *s2);
 }
-
