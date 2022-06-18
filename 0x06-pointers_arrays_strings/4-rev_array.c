@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* reverse_array - Entry point
-* @a:
-* @n:
+* reverse_array - function to reverse
+* @a: string array we get
+* @n: number of array
 * Return: Always 0
 **/
 void reverse_array(int *a, int n)
@@ -10,7 +10,7 @@ void reverse_array(int *a, int n)
 	int temp;
 	int i;
 
-	for (i = 0; i < (n / 2); i++)
+	for(i = 0; i < (n / 2); i++)
 		{
 			temp = a[i];
 			a[i] = a[n - i - 1];
