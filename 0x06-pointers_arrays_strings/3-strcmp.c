@@ -2,8 +2,8 @@
 
 /**
 * _strcmp - Entry point
-* @*s1:compare two strings
-* @*s2:compare two strings
+* @s1:compare two strings
+* @s2:compare two strings
 * Print with _putchar
 * Return: same if they are the same or else not the same
 **/
@@ -18,7 +18,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		for (i = 0; s2[i] != '\0'; i++)
 		{
-			if(s1[i] == s2[i])
+			if (s1[i] == s2[i])
 				cnt++;
 		}
 		return (s1[i] - s2[cnt]);
