@@ -12,7 +12,7 @@ int _strcmp(char *s1, char *s2)
 	int l  = strlen(s1);
 	int r = strlen(s2);
 	int i;
-	int cnt = 0;
+	int i = 0;
 
 	if (l == r)
 	{
@@ -21,7 +21,7 @@ int _strcmp(char *s1, char *s2)
 	if (s1[i] == s2[i])
 		cnt++;
 	}
-	return (s1[i] - s2[cnt]);
+	return (s1[i] - s2[i]);
 	}
 	else
 	return (*s1 - *s2);
