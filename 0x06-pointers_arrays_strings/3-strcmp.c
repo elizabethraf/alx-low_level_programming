@@ -4,7 +4,7 @@
 * _strcmp - Entry point
 * @s1:compare two strings
 * @s2:compare two strings
-* Print with _putchar
+* 
 * Return: same if they are the same or else not the same
 **/
 int _strcmp(char *s1, char *s2)
@@ -21,5 +21,6 @@ int _strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
+
 	return (*s1 - *s2);
 }
