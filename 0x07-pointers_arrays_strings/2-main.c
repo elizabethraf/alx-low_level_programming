@@ -1,11 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+* *_strchr - Entry point
+* @s:function that locate a character in a string
+* @c:function that locate a character in a string
+* Print with _putchar
+* Return: a pointer to the memory c and null if the character is not found
+**/
 int main(void)
 {
     char *s = "hello";
@@ -19,3 +20,4 @@ int main(void)
     }
     return (0);
 }
+
