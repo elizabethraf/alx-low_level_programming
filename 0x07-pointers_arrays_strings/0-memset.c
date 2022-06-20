@@ -2,17 +2,19 @@
 
 /**
 * *_memset - Entry point
+* @s:function that fills memory
+* @b:function that fills memory
 * @n: function that fills memory
 * Print with _putchar
 * Return: a pointer to the memory area s
 **/
 char *_memset(char *s, char b, unsigned int n)
 {
-	int l;
+	unsigned int l;
 
-	for ( l = 0; l < n; n++)
-		*S[l] = b;
+	for (l = 0; l < n; n++)
+	s[l] = b;
+	return (s);
 
-  return(s);
 }
 
