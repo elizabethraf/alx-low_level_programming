@@ -9,17 +9,19 @@
 **/
 char *_strchr(char *s, char c)
 {
-
 	char *ptr = s;
 
 	while (*s != '\0')
 	{
 		if (*s == c)
 			break;
+
 		s++;
 	}
-	if (*ptr == *s)
-		return(NULL);
+	if (s == ptr)
+	return (NULL);
 
 	return (s);
 }
+}
+
