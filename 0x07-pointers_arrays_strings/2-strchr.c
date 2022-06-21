@@ -12,7 +12,6 @@ char *_strchr(char *s, char c)
 	char *ptr = s;
 
 	while (*s != '\n')
-		c++;
 	{
 		if (*s == c)
 			break;
