@@ -1,13 +1,22 @@
 #include "main.h"
 
 /**
-* *_memset - Entry point
-* @s:function that fills memory
-* @b:function that fills memory
-* @n: function that fills memory
+* *_strpbrk - Entry point
+* @s:function that searches string
+* @accept:searches any sety of bytes
 * Print with _putchar
-* Return: a pointer to the memory area s
+* Return: a pointer s
 **/
 char *_strpbrk(char *s, char *accept)
 {
+	int k;
+	int l = strlen(s);
 
+	for (k = 0; k < l; k++)
+	{
+		if( s[k] == accept[k])
+			return s;
+		else
+			return NULL;
+	}
+}
