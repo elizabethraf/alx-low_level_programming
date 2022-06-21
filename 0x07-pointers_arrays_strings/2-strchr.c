@@ -20,8 +20,8 @@ char *_strchr(char *s, char c)
 	}
 
 	if (s == ptr)
-	return (NULL);
+		return (NULL);
 
-	return (s+'\0');
+	return (s + '\0');
 }
 
