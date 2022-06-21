@@ -13,13 +13,13 @@ void print_diagsums(int *a, int size)
 	int l;
 	int k;
 	int ttl = 0;
+	int **locArray = &a;
 
 	for (l = 0; l < size; l++)
 	{
 		for (k = 0; k < size; k++)
 			if (l == k)
-				printf("%d ", *(*a+l));
-				//ttl+=**a[l][k];
+				printf("%d ", &a[l][k]);
 		a++;
 	}
 
