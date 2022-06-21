@@ -10,8 +10,12 @@
 char *_strchr(char *s, char c)
 {
 	char *ptr = s;
+	c[f] = 0;
 
-	while (*s != '\0')
+	 _strchr(s[f], '1');
+	if (f != NULL)
+
+	while (*s != '\n')
 	{
 		if (*s == c)
 			break;
