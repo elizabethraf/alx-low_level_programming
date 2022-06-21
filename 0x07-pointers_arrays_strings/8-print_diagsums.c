@@ -16,7 +16,6 @@ void print_diagsums(int *a, int size)
 	for (l = 0; l < size; l++)
 	{
 		ttl1 += a[l];
-		printf("%d \n", a[l]);
 		a += k;
 	}
 
