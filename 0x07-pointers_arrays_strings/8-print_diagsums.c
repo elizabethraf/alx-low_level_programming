@@ -17,8 +17,16 @@ void print_diagsums(int *a, int size)
 
 	for (l = 0; l < size; l++)
 	{
-				ttl1 += a[l];
+		ttl1 += a[l];
 		a += k;
+	}
+
+	a-= k;
+	l = k;
+	for (k = 0; k < size; k++)
+	{
+		ttl2 += a[k];
+		a -= l;
 	}
 
 	printf("%d, %d \n", ttl2, ttl1);
