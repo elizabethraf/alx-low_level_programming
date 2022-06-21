@@ -11,21 +11,16 @@
 void print_diagsums(int *a, int size)
 {
 	int l;
-	int k;
-	int ttl = 0;
-	int **locArray;
-	locArray = &a;
+	int k = size;
+	int ttl1 = 0;
+	int ttl2 = 0;
 
 	for (l = 0; l < size; l++)
 	{
-		for (k = 0; k < size; k++)
-			if (l == k)
-			{
-				printf("%d ", **locArray );
-			}
-		locArray++;
+				ttl1 += a[l];
+		a += k;
 	}
 
-	printf("%d \n", ttl);
+	printf("%d, %d \n", ttl2, ttl1);
 
 }
