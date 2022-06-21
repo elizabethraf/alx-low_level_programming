@@ -10,11 +10,11 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len = 0;
-	f ((*s = NULL) || (*accept = NULL))
+	if ((*s = NULL) || (*accept = NULL))
 		return len;
 	while (*s && strchr(accept, *s++))
 	{
 		len++;
 	}
-	return s;
+	return len;
 }
