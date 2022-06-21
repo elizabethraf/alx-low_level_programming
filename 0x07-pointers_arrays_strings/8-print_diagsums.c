@@ -29,6 +29,6 @@ void print_diagsums(int *a, int size)
 		a -= l;
 	}
 
-	printf("%d, %d \n", ttl2, ttl1);
+	printf("%d, %d \n", ttl1, ttl2);
 
 }
