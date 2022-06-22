@@ -14,9 +14,13 @@ char *_strpbrk(char *s, char *accept)
 
 	for (k = 0; k < l; k++)
 	{
-		if( s[k] == accept[k])
+		if ( s[k] == accept[k])
+
+		{
 			return s;
+
 		else
-			return NULL;
-	}
+
+	return (NULL);
+
 }
