@@ -8,17 +8,22 @@
 **/
 int is_palindrome(char *s)
 {
-	s = strlen;
-	*s = i;
-
-	 len = strlen(s);
-
-	if ((i = 0) i < s; i++)
-
-		if (s != 0[len - i - 1])
-			return (0);
-	is_palindrome(s + 1);
-
-	return (1);
+	int i,c = 0,n = strlen(s);
+	if (i < n / 2)
+	{
+		if (s[i] == s[n-i-1])
+		{
+			c++;
+			i++;
+		is_palindrome(s);
+		}
+	}
+	else
+	{
+	if (c == i)
+		return (1);
+	else
+		return (0);
+	}
 }
 
