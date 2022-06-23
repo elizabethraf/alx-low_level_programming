@@ -12,7 +12,7 @@ int _poweroot(int a, int s)
 	if (a == (s * s))
 		return (s);
 	else if ((a / 2) == s)
-		return (-1);
+		return (1);
 	else
 		return (_poweroot(a, s + 1));
 }

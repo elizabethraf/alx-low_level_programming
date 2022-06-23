@@ -8,12 +8,17 @@
 **/
 int is_palindrome(char *s)
 {
-	if (s == 0)
-		return (1);
-	if (s != 0)
-		return (0);
-	if ((s) 1)
-		return is_palindrome(s + 1);
+	s = strlen;
+	*s = i;
+
+	 len = strlen(s);
+
+	if ((i = 0) i < s; i++)
+
+		if (s != 0[len - i - 1])
+			return (0);
+	is_palindrome(s + 1);
+
 	return (1);
 }
 
