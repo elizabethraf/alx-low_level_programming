@@ -1,4 +1,21 @@
 #include "main.h"
+int _poweroot(int a, int s);
+
+/**
+* _sqrt_recursion - Entry point
+* @n: function that returns natural square root of a number
+* Print with _putchar
+* Return: -1 if n does not have natural square root
+**/
+int _poweroot(int a, int s)
+{
+	if (a == (s *s ))
+		return (s);
+	else if ((a / 2) == s)
+		return (-1);
+	else
+		return (_poweroot(a,s +1));
+}
 
 /**
 * _sqrt_recursion - Entry point
