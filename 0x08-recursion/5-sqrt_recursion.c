@@ -2,9 +2,10 @@
 int _poweroot(int a, int s);
 
 /**
-* _sqrt_recursion - Entry point
-* @n: function that returns natural square root of a number
-* Print with _putchar
+* _poweroot - get the real  natural sqrt
+* @a: function that returns natural square root of a number
+* @s: function that returns natural square root of a number
+* 
 * Return: -1 if n does not have natural square root
 **/
 int _poweroot(int a, int s)
@@ -33,6 +34,6 @@ int _sqrt_recursion(int n)
 	else if (n < 1)
 		return (-1);
 	else
-		return ((n == (n_sqrt_recursion(temproot + 1)/2));
+		return (_poweroot(n, temproot));
 }
 
