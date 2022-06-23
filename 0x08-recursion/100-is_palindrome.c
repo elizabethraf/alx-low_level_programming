@@ -1,3 +1,4 @@
+
 #include "main.h"
 
 /**
@@ -8,15 +9,23 @@
 **/
 int is_palindrome(char *s)
 {
-	int i,c = 0,n = strlen(s);
+	int i;
+	int c;
+	int n;
+
+	i = 0;
+	c = 0;
+	n = strlen(s);
+
 	if (i < n / 2)
 	{
 		if (s[i] == s[n-i-1])
 		{
 			c++;
 			i++;
-		is_palindrome(s);
+		return is_palindrome(s);
 		}
+	return (1);
 	}
 	else
 	{
@@ -25,5 +34,6 @@ int is_palindrome(char *s)
 	else
 		return (0);
 	}
+	return (0);
 }
 
