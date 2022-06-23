@@ -5,17 +5,16 @@ int _poweroot(int a, int s);
 * _poweroot - get the real  natural sqrt
 * @a: function that returns natural square root of a number
 * @s: function that returns natural square root of a number
-* 
 * Return: -1 if n does not have natural square root
 **/
 int _poweroot(int a, int s)
 {
-	if (a == (s *s ))
+	if (a == (s * s))
 		return (s);
 	else if ((a / 2) == s)
 		return (-1);
 	else
-		return (_poweroot(a,s +1));
+		return (_poweroot(a, s + 1));
 }
 
 /**
@@ -27,6 +26,7 @@ int _poweroot(int a, int s)
 int _sqrt_recursion(int n)
 {
 	int temproot;
+
 	temproot = 0;
 
 	if (n == 0)
