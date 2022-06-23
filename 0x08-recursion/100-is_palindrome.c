@@ -1,4 +1,3 @@
-
 #include "main.h"
 
 /**
@@ -20,11 +19,11 @@ int is_palindrome(char *s)
 	if (i < n / 2)
 	{
 		if (s[i] == s[n-i-1])
-		{
-			c++;
-			i++;
-		return is_palindrome(s);
-		}
+	{
+		c++;
+		i++;
+		return (is_palindrome(s));
+	}
 	return (1);
 	}
 	else
