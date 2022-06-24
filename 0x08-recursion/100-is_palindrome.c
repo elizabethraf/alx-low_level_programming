@@ -22,6 +22,8 @@ int is_palindrome(char *s)
 	{
 		c++;
 		i++;
+
+		is_palindrome(s + 1);
 		return (is_palindrome(s));
 	}
 	return (1);
