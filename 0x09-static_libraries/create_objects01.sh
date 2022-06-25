@@ -1,7 +1,5 @@
 #!/bin/bash
 
-for LIBS in $(ls *.o); do
-ar -rcs libmy.a $LIBS;
-done
+ar -rc libmy.a *.o
 
 
