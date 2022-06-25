@@ -3,6 +3,7 @@
 *.swp
 _putchar.c
 
+!libmy.a
 # Object files
 *.o
 *.ko
