@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 		}
 	}
 
-	if ( error < 1)
+	if (error < 1)
 	{
 		printf("%d\n", ttl);
 		return (0);
