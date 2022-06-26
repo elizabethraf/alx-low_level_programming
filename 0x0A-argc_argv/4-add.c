@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i, ttl;
-	int error;
+	int error, isnumber;
 
 	ttl = 0;
 	error = 0;
@@ -18,10 +18,13 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if ( atoi(argv[i]) > 0 )
-				ttl += atoi(argv[i]);
-			else
-				error++;
+			for (isnumber = 0; argv[i][isnumber]; isnumber++)
+			{
+				if (__builtin_types_compatible_p(typeof(atoi(argv[i][isnumber])), typeof(int)))
+					ttl += atoi(argv[i]);
+				else
+					error++;
+			}
 		}
 	}
 
