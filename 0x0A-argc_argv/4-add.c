@@ -20,11 +20,10 @@ int main(int argc, char *argv[])
 		{
 			for (isnumber = 0; argv[i][isnumber]; isnumber++)
 			{
-				if (__builtin_types_compatible_p(typeof(atoi(argv[i][isnumber])), typeof(int)))
-					ttl += atoi(argv[i]);
-				else
+				if (!(argv[i][isnumber] >= '0') && !(argv[i][isnumber] <= '9'))
 					error++;
 			}
+			ttl += atoi(argv[i]);
 		}
 	}
 
