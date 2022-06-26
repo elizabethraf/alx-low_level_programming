@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		{
 			for (isnumber = 0; argv[i][isnumber]; isnumber++)
 			{
-				if (!(argv[i][isnumber] >= '0') && !(argv[i][isnumber] <= '9'))
+				if ((argv[i][isnumber] > '9') || (argv[i][isnumber] < '0'))
 					error++;
 			}
 			ttl += atoi(argv[i]);
