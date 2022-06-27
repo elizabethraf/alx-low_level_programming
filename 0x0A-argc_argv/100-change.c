@@ -10,9 +10,11 @@ int main(int argc, char *argv[])
 {
 	int coins[] =(25, 10, 5, 2, 1);
 	int amount = atoi(argv[1]);
-	
+
 	if (argc > 1 )
 	{
-		coinNumber = mycombos(&amount, coins, 0);
-		printf("%
+		printf("%d\n", mycombos(&amount, coins, 0));
 	}
+	else
+		printf("Error\n");
+}
