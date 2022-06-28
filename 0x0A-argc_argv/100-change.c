@@ -8,6 +8,7 @@
 * */
 int main(int argc, char *argv[])
 {
+<<<<<<< HEAD
 	int coins[5] = {25, 10, 5, 2, 1};
 
 	if (argc > 1 )
@@ -21,3 +22,13 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 }
+=======
+	int coins[] =(25, 10, 5, 2, 1);
+	int amount = atoi(argv[1]);
+	
+	if (argc > 1 )
+	{
+		coinNumber = mycombos(&amount, coins, 0);
+		printf("%
+	}
+>>>>>>> parent of 41c6187... 100-change.c cmp
