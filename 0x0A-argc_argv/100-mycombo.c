@@ -9,20 +9,21 @@
   * return: return the total number of coins
 **/
 
-int mycombos(int *a, int *c, int k)
+int mycombos(int a, int *c, int k)
 {
 	int b = 0;
-	int i, len;
-	len = strlen(c);
+	int len = (int)sizeof(c) / (int)sizeof(c[0]);
 
-	if (*a == 0)
+	if (a == 0)
 		return 1;
 
-	if (*a < 0)
+	if (a < 0)
 		return 0;
-
-	for (i = k, i < len; i++)
-		b += mycombos(*a - c[i], c, k);
+	while(c[k] < len)
+	{
+		if (c[k] == a)
+			return 
+		b += mycombos(a - 1, c, k);
 
 	return (b);
 }
