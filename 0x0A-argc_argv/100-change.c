@@ -9,18 +9,19 @@
 int main(int argc, char *argv[])
 {
 	int c[5] = {25, 10, 5, 2, 1};
-	int a = atoi(argv[1]);
 	int num, i = 0;
 	int ttl = 0;
-
-	if (a < 0)
-	{
-		printf("0\n");
-		return (1);
-	}
+	int a;
 
 	if (argc > 1 )
     {
+		a = atoi(argv[1]);
+		if (a < 0)
+		{
+			printf("0\n");
+			return (1);
+		}
+
         while (i < 5)
         {
             if (c[i] <= a)
