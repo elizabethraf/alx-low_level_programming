@@ -8,27 +8,58 @@
 * */
 int main(int argc, char *argv[])
 {
-<<<<<<< HEAD
-	int coins[5] = {25, 10, 5, 2, 1};
+	int c[5] = {25, 10, 5, 2, 1};
+	int a = atoi(argv[1]);
+	int num, i = 0;
+	int ttl = 0;
 
-	if (argc > 1 )
+	if (a < 0)
 	{
-		printf("%d\n", mycombos(atoi(argv[1]), coins, 0));
-		return (0);
-	}
-	else
-	{
-		printf("Error\n");
+		printf("0\n");
 		return (1);
 	}
-}
-=======
-	int coins[] =(25, 10, 5, 2, 1);
-	int amount = atoi(argv[1]);
-	
+
 	if (argc > 1 )
-	{
-		coinNumber = mycombos(&amount, coins, 0);
-		printf("%
-	}
->>>>>>> parent of 41c6187... 100-change.c cmp
+    {
+        while (i < 5)
+        {
+            if (c[i] <= a)
+            {
+                num = a / c[i];
+                if (c[i] == c[0])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[1])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[2])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[3])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[4])
+                {
+                    ttl+=num;
+                }
+
+                a = a - num * c[i];
+            }
+
+            i++;
+        }
+        printf("%d\n", ttl);
+        return (0);
+    }
+    else
+    {
+        printf("Error\n");
+        return (1);
+    }
+
+}
+
