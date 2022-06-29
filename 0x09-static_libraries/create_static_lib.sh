@@ -8,4 +8,6 @@ for LIBS in $(ls *.o); do
 ar -rc liball.a $LIBS;
 done
 
+ranlib liball.a
+
 
