@@ -12,29 +12,53 @@ int main(int argc, char *argv[])
 	int ttl = 0;
 	int a;
 
-	if (argc > 1)
-	{
-	a = atoi(argv[1]);
+
 	if (a < 0)
-	printf("0\n");
+	{
+		printf("0\n");
 		return (1);
-			if (c[i] <= a)
-			num = a / c[i];
-			if (c[i] == c[0];
-				ttl += num;
-			if (c[i] == c[1])
-				ttl += num;
-				if (c[i] == c[2])
-				ttl += num;
-				if (c[i] == c[3])
-				ttl += num;
-				if (c[i] == c[4])
-				ttl += num;
-				a = a - num * c[i];
-				i++;
-		printf("%d\n", ttl);
-		return (0);
 	}
-		printf("Error\n");
-		return (1);
+
+	if (argc > 1 )
+    {
+        while (i < 5)
+        {
+            if (c[i] <= a)
+            {
+                num = a / c[i];
+                if (c[i] == c[0])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[1])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[2])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[3])
+                {
+                    ttl+=num;
+                }
+                if (c[i] == c[4])
+                {
+                    ttl+=num;
+                }
+
+                a = a - num * c[i];
+            }
+
+            i++;
+        }
+        printf("%d\n", ttl);
+        return (0);
+    }
+    else
+    {
+        printf("Error\n");
+        return (1);
+    }
+
 }
