@@ -22,14 +22,13 @@ char *create_array(unsigned int size, char c)
 		else
 		}
 
-		{
 		i = 0;
 		while (i < size)
-		{
 
-			if (arr + i) = c
+
+			for (arr + i) = c
 			i++;
-		}
+		{
 		return (0);
 		}
 }
