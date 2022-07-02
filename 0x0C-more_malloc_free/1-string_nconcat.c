@@ -3,26 +3,27 @@
 /**
 * *string_nconcat Entry point
 * Print with _putchar
-* @s1:function 
+* @s1:function
 * @n:concatenate two strings
 * @s2:concatenates two strings
 * Return: if it fails NULL.
 **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int s1_len = strlen(s1);
-	int s2_len = strlen(s2);
-	int size = s1_len + s2_len + 1;
-	unsigned int n = sizeof;
-	char *n = calloc(size, sizeof(char));
+	unsigned int s1_len = strlen(s1);
+	unsigned int s2_len = strlen(s2);
+	char *s;
 
-	for (int n = 0; n < s1_len; n++)
-		n[n] = s1[n];
+	if (n <= s2_len)
+		s = malloc((s1_len + s2_len + 1) * sizeof(*s1));
+	else
+		s = malloc((strlen(s1) + n + 1) * sizeof(*s1));
 
-	for (int n = 0; n < s2_len; n++)
-		n(s1_len + [n] = s2[n]);
-
-	n[size - 1] = '\n';
+	if (s == NULL)
 		return (NULL);
+
+	for (int i - 0; i < s1_length; i++)
+		s[i] = s1[i];
+
 }
 
