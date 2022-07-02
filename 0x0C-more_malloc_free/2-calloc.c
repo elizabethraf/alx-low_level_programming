@@ -14,17 +14,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unigned nmemb;
 	int i;
 
-	if ((nmemb = calloc(i)) = 0)
+	if ( nmemb = NULL)
+		return (NULL);
+
+	for (size_t i = 0; i < 5; i++)
+		printf ("%d ", calloc[i]);
 	return (NULL);
 
-	if (nmemb = malloc(i)  != NULL)
-	{
-		for (i = 0; i < nmemb; i++)
-		nmemb[i] = (char*) malloc (nmemb);
-		}
-		else
-			return (NULL);
-	return(NULL);
+	putchar('\n');
+
+		free(allocated_with_calloc);
 }
-
-
