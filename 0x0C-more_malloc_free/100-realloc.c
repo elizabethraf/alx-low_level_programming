@@ -10,6 +10,16 @@
 **/
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
+	void *p;
 	(void)old_size;
-	return (realloc(ptr, new_size));
+
+	p = realloc(ptr, new_size);
+
+	if (p == NULL)
+	{
+		free(p);
+		return (NULL);
+	}
+
+	return (p);
 }
