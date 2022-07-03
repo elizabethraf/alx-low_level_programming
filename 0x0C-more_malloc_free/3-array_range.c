@@ -9,17 +9,25 @@
 **/
 int *array_range(int min, int max)
 {
-	int arr, k = min, i = 0;
+	int *ptr;
+	int k;
 
 	if (min > max)
+	{
 		return (NULL);
-	*arr = malloc((size, max, min; + 1 * sizeof(int));
+	}
 
-	if (arr != NULL)
+	ptr = calloc((max - min + 1), sizeof(*ptr));
+	if (ptr == NULL)
+	{
 		return (NULL);
+	}
 
-	if (i <= max - min)
-		arr[i++] = k++;
-
-	return (arr);
+	k = min;
+	while (k <= max)
+	{
+		ptr[k] = k;
+		k++;
+	}
+	return (ptr);
 }
