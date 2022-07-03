@@ -5,23 +5,19 @@
 * Print with _putchar
 * @nmemb:memory allocate
 * @size:using malloc
-* return funtion that print 0 - 14
-* Return: u if fails
+* Return: NULL
 **/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int;
-	unigned nmemb;
-	int i;
+	unsigned int *k;
 
-	if ( nmemb = NULL)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	for (size_t i = 0; i < 5; i++)
-		printf ("%d ", calloc[i]);
-	return (NULL);
+	k = calloc(size, sizeof(nmemb));
 
-	putchar('\n');
+	if (k == NULL)
+		return (NULL);
 
-		free(allocated_with_calloc);
+	return (k);
 }
