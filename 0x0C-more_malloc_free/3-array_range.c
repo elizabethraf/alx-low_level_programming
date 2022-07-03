@@ -11,22 +11,26 @@ int *array_range(int min, int max)
 {
 	int *ptr;
 	int k;
+	int s;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
 
-	ptr = calloc((max - min + 1), sizeof(*ptr));
+	s = (max - min) + 1;
+
+	ptr = calloc(s, sizeof(*ptr));
+
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	k = min;
-	while (k <= max)
+	k = 0;
+	while (k < s)
 	{
-		ptr[k] = k;
+		ptr[k] = min++;
 		k++;
 	}
 	return (ptr);
