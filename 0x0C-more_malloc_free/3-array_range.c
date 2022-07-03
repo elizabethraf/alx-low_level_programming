@@ -9,20 +9,17 @@
 **/
 int *array_range(int min, int max)
 {
-	int arr[5] = {0,1,2,3,5};
-	int max = arr[0];
-	int min = arr[0];
-	unsigned int i;
-	unsigned int k;
-	
-	k = malloc(min, max * size);
-	for (i = 0; i < k; i++)
-	{
-		if (*(k + i) > max)
-			max = * (k + i);
-		if (*(k + i) < min)
-			min = * (k + i);
-	{
-		return (0);
-	}
+	int arr, k = min, i = 0;
+
+	if (min > max)
+		return (NULL);
+	*arr = malloc((size, max, min; + 1 * sizeof(int));
+
+	if (arr != NULL)
+		return (NULL);
+
+	if (i <= max - min)
+		arr[i++] = k++;
+
+	return (arr);
 }
