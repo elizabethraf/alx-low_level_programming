@@ -14,22 +14,15 @@ int *array_range(int min, int max)
 	int min = arr[0];
 	unsigned int i;
 	unsigned int k;
-
+	
 	k = malloc(min, max * size);
-	for (i = 1; i < 5; i++)
+	for (i = 0; i < k; i++)
 	{
-		if (max < arr[i])
-			max = arr[i];
-		if (min > arr[i])
-			min = arr[i];
+		if (*(k + i) > max)
+			max = * (k + i);
+		if (*(k + i) < min)
+			min = * (k + i);
+	{
+		return (0);
 	}
-
-	if (min > max)
-		return (NULL);
-	arr = malloc((min, max * sizeof)
-
-	if (k == NULL)
-		return (NULL);
-
-	return (k);
 }
