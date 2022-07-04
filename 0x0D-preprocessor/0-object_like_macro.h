@@ -1,4 +1,6 @@
-#include <stdio.h>
+#ifndef _0_OBJECT_LIKE_MACRO_H_
+#define _0_OBJECT_LIKE_MACRO_H_
+#define SIZE 1024
+#endif
 
-#define BUFFER_SIZE 1024
-foo = (char*) malloc (BUFFER_SIZE);
+
