@@ -10,14 +10,16 @@
 **/
 struct dog my_dog
 {
-	char my_dog.*name;
-	float my_dog.*age;
-	char my_dog.*owner;
-};
+	char *name;
+	float *age;
+	char *owner;
+}my_dog;
 
-void int_dog(struct dog * d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
-dog_t
-*new_dog(char *name, float age, char *owner); 
-void free_dog(dog_t *d);
+int main(void)
+{
+	struct dog my_dog;
+	my_dog my_dog;
+
+	return(0);
+}
 #endif
