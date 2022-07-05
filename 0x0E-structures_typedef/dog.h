@@ -1,3 +1,4 @@
+#ifndef _DOG_H_
 #define _DOG_H_
 
 /**
@@ -11,18 +12,9 @@
 struct dog
 {
 	char *name;
-	char *age;
+	float age;
 	char *owner;
 };
 
-int main(void)
-{
-	struct dog my_dog;
-	mydog.name = "Ppppy";
-	mydog.age = "3.5";
-	mydog.owner = "Bob";
+#endif
 
-	printf("%s", my_dog);
-
-	return(0);
-}
