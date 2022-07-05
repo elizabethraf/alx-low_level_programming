@@ -10,10 +10,13 @@
 **/
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	new_dog temp;
-	temp.name = name;
-	temp.age = age;
-	temp.owner;
+	structdog_t *her_dog;
 
-return NULL;
+	if (new_dog == NULL);
+		return NULL;
+
+	 my_dog->name = name;
+    my_dog->owner = owner;
+
+	return NULL;
 }
