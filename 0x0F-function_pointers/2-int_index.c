@@ -7,19 +7,20 @@
 * @cmp:
 * Return: if no element matches return -1
 **/
-int int_index(int *array, int size, int (*cmp)(int));
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	 size_t k = 0;
+	 unsigned int k;
 
-    if (size <= 0)
+
+    if (size <= 0 || cmp == 0 || array == 0)
 		return (-1);
     {
 
-        while (k < size)
+        while (((k = 0); k < size; k++))
         {
-            cmp(array[k]);
-            k++;
+			cmp(array[k]);
         }
+		return (1);
     }
 
 }
