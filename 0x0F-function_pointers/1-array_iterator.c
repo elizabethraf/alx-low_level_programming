@@ -12,10 +12,14 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t k = 0;
 
-	while (k < size)
+	if (action != NULL)
 	{
-		action(array[k]);
-		k++;
+
+		while (k < size)
+		{
+			action(array[k]);
+			k++;
+		}
 	}
 
 }
