@@ -2,8 +2,9 @@
 
 /**
 * array_iterator - check code
-* @size:
-* @action:
+* @size:executes functon
+* @action:parameters of  array
+* @array: function that execute
 * Return:0 always
 i* print with putchar
 **/
