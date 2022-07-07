@@ -9,13 +9,22 @@
 int main(int argc, char *argv[])
 {
 	int argcount = argc;
+	char *operto = argv[2];
+	int nb1 = atoi(argv[1]);
+	int nb2 = atoi(argv[3]);
 
 	if (argcount < 4 || argcount > 4)
 	{
-		
+		ERP;
+		exit(98);
 	}
 
-	get_op_func()(
+	if ((*operto == '%' && nb2 == 0)  || (*operto == '/' && nb1 == 0))
+	{
+		ERP;
+		exit(100);
+	}
+
 
 	return (0);
 }
