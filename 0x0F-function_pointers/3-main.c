@@ -11,8 +11,6 @@ int main(int argc, char *argv[])
 	int argcount = argc;
 	int nb1, nb2;
 	char *operto;
-	void *results;
-
 
 	if (argcount < 4 || argcount > 4)
 	{
@@ -30,15 +28,14 @@ int main(int argc, char *argv[])
 		exit (100);
 	}
 
-	results = get_op_func(operto);
-	if ( results != NULL)
-	{
-		printf("%d\n", results(nb1,nb2));
-	}
-	else
+	if ( get_op_func(operto) == NULL)
 	{
 		ERP;
 		exit (99);
+	}
+	else
+	{
+		printf("%d\n", get_op_func(operto)(nb1,nb2));
 	}
 
 
