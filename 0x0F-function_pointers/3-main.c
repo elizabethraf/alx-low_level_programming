@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 	int argcount = argc;
 	int nb1, nb2;
 	char *operto;
+	int results;
 
 
 	if (argcount < 4 || argcount > 4)
@@ -23,10 +24,22 @@ int main(int argc, char *argv[])
 	nb1 = atoi(argv[1]);
 	nb2 = atoi(argv[3]);
 
-	if ((*operto == '%' && nb2 == 0)  || (*operto == '/' && nb1 == 0))
+	if ((*operto == '%' && nb2 == 0)  || (*operto == '/' && nb2 == 0))
 	{
 		ERP;
-		exit(100);
+		exit (100);
+	}
+
+	results = get_op_func(operto)(nb1, nb2);
+
+	if ( results != NULL)
+	{
+		printf("%d\n", *results);
+	}
+	else
+	{
+		ERP;
+		exit (99);
 	}
 
 
