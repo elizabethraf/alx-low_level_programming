@@ -4,7 +4,7 @@
 * main - print the num of args you passed to it
 * @argc: argument count
 * @argv: argument vector, array of strings
-* Return: 0 if all is well, exits with numbers 
+* Return: 0 if all is well, exits with numbers
 **/
 int main(int argc, char *argv[])
 {
@@ -25,19 +25,18 @@ int main(int argc, char *argv[])
 	if ((*operto == '%' && nb2 == 0)  || (*operto == '/' && nb2 == 0))
 	{
 		ERP;
-		exit (100);
+		exit(100);
 	}
 
-	if ( get_op_func(operto) == NULL)
+	if (get_op_func(operto) == NULL)
 	{
 		ERP;
-		exit (99);
+		exit(99);
 	}
 	else
 	{
-		printf("%d\n", get_op_func(operto)(nb1,nb2));
+		printf("%d\n", get_op_func(operto) (nb1, nb2));
 	}
-
 
 	return (0);
 }
