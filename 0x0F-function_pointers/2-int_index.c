@@ -9,21 +9,22 @@
 **/
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	 unsigned int k;
+	 int k;
+	 int ind;
 
-
-    if (size <= 0 || cmp == 0 || array == 0)
+    if (size <= 0)
 		return (-1);
-    {
 
-        while (k < size)
-			   	k++;
-        {
-			cmp(array[k]);
-				return (-1);
-        }
-		return (1);
+	k = 0;
+	while (k < size)
+	{
+		ind = cmp(array[k]);
+		if (ind != 0)
+			return (k);
+
+		k++;
     }
 
+	return (-1);
 }
 
