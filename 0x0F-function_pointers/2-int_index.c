@@ -2,17 +2,17 @@
 
 /**
 * int_index - check code
-* @size:
-* @array:
-* @cmp:
+* @size: of interger
+* @array: of element
+* @cmp:compare the elements
 * Return: if no element matches return -1
 **/
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	 int k;
-	 int ind;
+	int k;
+	int ind;
 
-    if (size <= 0 || cmp == NULL)
+	if (size <= 0 || cmp == NULL)
 		return (-1);
 
 	if (array == NULL)
@@ -26,7 +26,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 			return (k);
 
 		k++;
-    }
+	}
 
 	return (-1);
 }
