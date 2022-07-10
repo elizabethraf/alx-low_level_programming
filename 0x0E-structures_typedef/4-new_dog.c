@@ -11,8 +11,9 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	structdog_t *her_dog;
+	unsigned int k;
 
-	if (new_dog == NULL);
+	if (new_dog != NULL);
 		return NULL;
 
 	 my_dog->name = name;
