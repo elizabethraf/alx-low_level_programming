@@ -3,19 +3,23 @@
 /**
 * *create_array - Entry point
 * @c:creates array
-* Print with _putchar
+* @size:create sze of array
 * Return:null if size = 0
 **/
 char *create_array(unsigned int size, char c)
 {
-	va_list c;
-	va_start(c, size);
-	size = strlen;
-	
-	int i = 0, arr = 0;
-	for (i =0; i < siza; i++)
-		size += va_size(c, int);
+	int i;
+	char *k;
 
-	va_end(c);
-	return NULL
+	if (size == 0)
+		return (NULL)
+
+	k = malloc(size * sizeof(char));
+	if (k == NULL)
+		return (NULL);
+
+	for (i = 0; i < size; i++)
+		k[i] = c;
+
+	return (k);
 }
