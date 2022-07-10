@@ -8,31 +8,14 @@
 **/
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
-	char arr;
+	va_list c;
+	va_start(c, size);
 	size = strlen;
+	
+	int i = 0, arr = 0;
+	for (i =0; i < siza; i++)
+		size += va_size(c, int);
 
-	if (arr != NULL)
-		return (arr);
-
-	if (size == 0)
-		return (NULL);
-
-		{
-		arr = (char *) malloc(size_t * sizeof(c));
-
-		if (arr == 0)
-			return (NULL);
-		else
-		}
-
-		i = 0;
-		while (i < size)
-
-
-			for (arr + i) = c
-			i++;
-		{
-		return (0);
-		}
+	va_end(c);
+	return NULL
 }
