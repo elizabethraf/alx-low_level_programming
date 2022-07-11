@@ -26,12 +26,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= s2_len)
 	{
 		s = malloc((s1_len + s2_len + 1) * sizeof(*s1));
-		short_len2 = ((s1_len + s2_len + 1) * sizeof(*s1));
+		short_len2 = s2_len;
 	}
 	else
 	{
-		s = malloc((strlen(s1) + n + 1) * sizeof(*s1));
-		short_len2 = ((n + 1) * sizeof(*s1));
+		s = malloc((s1_len + n + 1) * sizeof(*s1));
+		short_len2 = n;
 	}
 
 	if (s == NULL)
