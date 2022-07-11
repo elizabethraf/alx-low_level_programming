@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* *string_nconcat Entry point
+* *string_nconcat -  Entry point
 * Print with _putchar
 * @s1:function
 * @n:concatenate two strings
