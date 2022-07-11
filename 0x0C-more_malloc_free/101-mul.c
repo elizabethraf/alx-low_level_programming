@@ -15,10 +15,10 @@ int _isdigit(char *s, int cnt)
 {
 	int *p;
 	int c;
-	n = 1
+	n = 1;
+
 	while (n < cnt)
 	{
-		
 		if (s < '0' || s > '9')
 		n++;
 	}
@@ -34,9 +34,16 @@ int _isdigit(char *s, int cnt)
 **/
 int main(int argc, char *argv[])
 {
+	int *num1;
+	int *num2;
+	unsigned int arg1_len;
+	unsigned int arg2_len;
+
 	if (argc == 3)
 	{
-		if (_isdigit(argv[1]) && _isdigit(argv[2]) )
+		arg1_len = strlen(argv[1]);
+		arg2_len = strlen(argv[2]);
+		if (_isdigit(argv[1], arg1_len) && _isdigit(argv[2], arg2_len) )
 		{
 			calprint(argv[1], argv[2]);
 			return (0);
@@ -46,4 +53,6 @@ int main(int argc, char *argv[])
 	}
 	else
 		exiterror;
+
+	return 0;
 }
