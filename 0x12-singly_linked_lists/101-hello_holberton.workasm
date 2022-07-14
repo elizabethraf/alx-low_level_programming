@@ -1,0 +1,20 @@
+; Code goes in the text section
+SECTION .TEXT
+	GLOBAL _start
+
+_start:
+	mov rax,1            ; 'write' system call = 4
+	mov rdi,1            ; file descriptor 1 = STDOUT
+	mov rsi,hello        ; string to write
+	mov rdx,helloLen     ; length of string to write
+	syscall             ; call the kernel
+
+	; Terminate program
+	mov rax,60            ; 'exit' system call
+	mov rdi,0            ; exit with error code 0
+	syscall              ; call the kerneli
+
+; Define variables in the data section
+SECTION .RODATA
+	hello:     db 'Hello, Holberton',10
+	helloLen:  equ $-hello
