@@ -3,17 +3,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/**
-* betty style doc for function main goes there */
-/**
-* main - Entry point
-* check is the rand n is negative or positive,
-* or zero and print accordingly
-* Return: Always (0) (Success)
-**/
 void positive_or_negative(int i)
 {
-	int n;
+	i = n;
+	int i;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -24,10 +17,8 @@ void positive_or_negative(int i)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is positive\n", n);
-	return (void);
+	return (0);
 }
-
-#include "main.h"
 
 /**
 * main - check the code
