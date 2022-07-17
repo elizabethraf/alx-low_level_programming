@@ -2,6 +2,8 @@
 *.d
 *.swp
 _putchar.c
+main.c
+positive_or_negative.c
 
 # Object files
 *.o
