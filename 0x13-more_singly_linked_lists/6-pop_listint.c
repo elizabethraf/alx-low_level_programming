@@ -1,0 +1,21 @@
+#include "lists.h"
+
+/**
+* pop_listint - check code
+* @head: delete the node
+* Return: 0 if empty
+**/
+int pop_listint(listint_t **head)
+{
+	listint_t *len;
+
+	len = *head;
+
+	if (len == NULL || *head == NULL)
+			return (0);
+	len = *head;
+	*head = len->next;
+	free(len);
+	return (0);
+}
+
