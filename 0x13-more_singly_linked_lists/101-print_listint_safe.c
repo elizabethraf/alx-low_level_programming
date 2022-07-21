@@ -7,21 +7,22 @@
 **/
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t len = 0;
-	int ptr;
-	listint_t *s;
+	listint_t *len;
+	len = *head;
 
-	s = malloc((listint_t *) head);
-
-	for (len = 0, ptr = 1; (head != s || ptr) && head != NULL; len++)
+	if (len == NULL)
+			return (NULL);
+	while (head != NULL)
 	{
-		printf("[%p] %d\n", (void *) head, head->n);
-		if (head == s)
-			ptr = 0;
-		head = head->next;
+		count << " " << len->data << " ";
+		last = len;
+		len = len->next;
 	}
+	count << \ntraversal in reverse"
+		<< "direction\n";
+		while (len != NULL)
+		{
+			count << " " << len->data << " ";
+			len = len->prev;
 
-	if (s != NULL)
-		printf("-> [%p] %d\n", (void *) head, head->n);
-	return (len);
 }
