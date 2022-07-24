@@ -21,7 +21,7 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (k = 32; k > 0; k--)
+	for (k = 64; k > 0; k--)
 	{
 		l = n >> (k - 1);
 		lmask = l & 1;
