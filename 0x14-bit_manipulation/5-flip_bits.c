@@ -12,7 +12,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	int b, count = 0;
 	unsigned int current = n ^ m;
 
-	for (b = 98; b >= 0; b--)
+	for (b = 10; b >= 0; b--)
 	{
 		sum = current >> b;
 		if (sum & 1)
