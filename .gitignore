@@ -4,6 +4,7 @@
 _putchar.c
 main.c
 positive_or_negative.c
+crackme3
 
 # Object files
 *.o
