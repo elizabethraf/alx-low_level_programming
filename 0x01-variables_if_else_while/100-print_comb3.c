@@ -19,7 +19,7 @@ int main(void)
 			{
 				putchar(ch);
 				putchar(a);
-				if ( ch < 56)
+				if (ch < 56)
 				{
 					putchar(44);
 					putchar(32);
