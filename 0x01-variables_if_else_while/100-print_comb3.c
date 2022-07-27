@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 
 /**
@@ -22,8 +21,8 @@ int main(void)
 				putchar(a);
 				if (ch != 56 || ch != 57)
 				{
-					putchar(32);
 					putchar(44);
+					putchar(32);
 				}
 			}
 		}
