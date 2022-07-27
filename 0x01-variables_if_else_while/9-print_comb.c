@@ -1,63 +1,26 @@
-    #include<stdio.h>
+#include<stdio.h>
 
-    #include<string.h>
+/**
+* main - Entry point
+* check is the rand n is negative or positive,
+* or zero and print accordingly
+* Return: Always (0) (Success)
+**/
+int main(void)
+{
+	int ch;
 
-    #define N 10
+	for (ch = 48; ch <= 57; ch++)
+	{
+		putchar(ch);
+		if (ch != 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
+	}
 
-     
+	putchar(10);
 
-    void print(int *num, int n)
-
-    {
-
-        int i;
-
-        for ( i = 0 ; i < n ; i++)
-
-            printf("%d ", num[i]);
-
-        printf("\n");
-
-    }
-
-    int main()
-
-    {
-
-        int num[N];
-
-        int *ptr;
-
-        int temp;
-
-        int i, n, j;
-
-        printf("\nHow many number you want to enter: ");
-
-            scanf("%d", &n);
-
-        printf("\nEnter a list of numbers to see all combinations:\n");
-
-        for (i = 0 ; i < n; i++)
-
-            scanf("%d", &num[i]);
-
-        for (j = 1; j <= n; j++) {
-
-            for (i = 0; i < n-1; i++) {
-
-                temp = num[i];
-
-                num[i] = num[i+1];
-
-                num[i+1] = temp;
-
-                print(num, n);
-
-    	}
-
-        }
-
-        return 0;
-
-    }
+	return (0);
+}
