@@ -24,7 +24,7 @@ int main(void)
 					putchar(a);
 					putchar(32);
 					if (c == b)
-					   b++;	
+					b++;
 					putchar(b);
 
 					if (c > ch)
