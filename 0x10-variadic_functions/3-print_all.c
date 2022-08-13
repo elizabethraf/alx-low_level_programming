@@ -35,11 +35,15 @@ void print_all(const char * const format, ...)
 				printf("%s%s", strings, c);
 				break;
 			default:
-				break;
+				i++;
+				continue;
 		}
+
+
 		strings = ", ";
 		i++;
 	}
+
 	printf("\n");
 	va_end(args);
 }
