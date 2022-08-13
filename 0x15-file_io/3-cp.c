@@ -1,4 +1,5 @@
 #include "main.h"
+#ifndef _MAIN_H
 
 int readwrite_cpfile(const char *filename, const char *fileto)
 {
@@ -43,7 +44,7 @@ int readwrite_cpfile(const char *filename, const char *fileto)
 
 	if (b > 0)
 		return (b);
-	else 
+	else
 		return (98);
 
 }
@@ -51,19 +52,20 @@ int readwrite_cpfile(const char *filename, const char *fileto)
 
 
 /**
-* 
+*
 *
 **/
 int main(int argc, const char **argv)
 {
 
-    if (argc != 3)
-    {
-        dprintf(2, "Usage: %s file_from file_to\n", argv[0]);
-        exit(97);
-    }
+	if (argc != 3)
+	{
+		dprintf(2, "Usage: %s file_from file_to\n", argv[0]);
+		exit(97);
+	}
 
 	readwrite_cpfile(argv[1], argv[2]);
 
 	return (0);
 }
+#endif
