@@ -9,15 +9,9 @@
 **/
 char *_strstr(char *haystack, char *needle)
 {
-	char haystack[] = "Hallow World";
-	char needle[] = "World";
-
-	char *world = strstr(haystack, needle);
-	putchar("world: %s\n", world);
-
-	char now[] = "now"'
-	char *fail = strstr(haystack, now);
-
-	if (fail == NULL)
-		putchar("failed to find string!\n");
+    size_t n = strlen(needle);
+    while(*haystack)
+        if(!memcmp(haystack++, needle, n))
+            return (char *)(haystack - 1);
+    return (0);
 }
