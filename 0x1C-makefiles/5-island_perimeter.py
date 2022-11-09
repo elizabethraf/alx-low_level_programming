@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
-Display that returns the perimeter of the island described in grid
-
+Display that returns the perimeter of the island described in grid.
 """
 
 
